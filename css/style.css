@@ -3,7 +3,7 @@
 
 #logo { 
 
-	float: left;
+	position: absolute;
 	height: 180px;
 	width: 180px;
 	margin: 20px 0 0 30px;
@@ -17,14 +17,15 @@ nav { float: right; margin:30px  30px 0 0; position: relative;z-index: 2}
 nav ul li { float: left;list-style-type: none; margin: 0 15px}
 nav ul li a{ float: left;color: #000;font-weight: bold;font-size: 18px;}
 
-.home section {background:; height: 100%}
+.home section {background:; height: 100%; display:block; height: 90vh}
+section {display: inline-block; width: 100%; height: 80vh}
 .home #home_section { position: absolute;width: 50%;left: 50px; top: 220px; z-index: 3;}
 .home #home_section h1 { font-size: 50px;font-weight: bold; margin-bottom: 20px}
 .home #home_section p { font-size: 20px;font-weight: normal; width: 70%; line-height: 26px;}
 .home #home_section a { margin-top:20px;}
 
 .btn_primary { border-radius: 30px; background:#00AEEF; display:inline-block; padding: 10px 70px; color: #fff; font-size: 24px;}
-.btn_primary:hover { border:3px solid #00AEEF; background: #fff; color: #00AEEF;text-decoration: none}
+.btn_secundary { border-radius: 30px; border:2px solid #ccc; display:inline-block; padding: 10px 40px; color: #ccc; font-size: 14px;}
 
 .cloud { background: url(../img/cloud.png) no-repeat; height:21px; width: 92px; position: absolute;
     -webkit-animation: animateCloud 30s linear infinite;
@@ -32,18 +33,31 @@ nav ul li a{ float: left;color: #000;font-weight: bold;font-size: 18px;}
     animation: animateCloud 30s linear infinite;
 }
 
-#bg {
+.home #bg {
 	position:relative;
 	width: 90%;
 	margin: auto;
 	height: 100%;
-	top: -150px;
+	top: 50px;
 	left: 20px;
 	z-index: 1;
 
 }
 
-footer { width: 100%; display: inline-block; background:; padding: 20px 0 0 0; position: relative;top: -150px;}
+#bg {
+	position:absolute;
+	width: 90%;
+	margin: auto;
+	height: 100%;
+	top: 50px;
+	left: 50px;
+	z-index: 1;
+
+}
+
+
+
+footer { width: 100%; display: inline-block; background:; padding: 20px 0 0 0; position: relative;}
 footer ul { text-align: center;}
 footer ul li { display: inline-block; color: #00AEEF;vertical-align: bottom; margin-right: 5px;}
 footer ul li p { line-height: 20px;}
@@ -52,8 +66,17 @@ footer ul li a img {}
 
 /*Register form*/
 
-#register_form { width:80%; margin: auto; text-align: center; display: inline-block;}
+#register_form { width:80%; margin: auto; text-align: center; position: relative;z-index: 10}
+#register_form h2 { width: 100%; margin: 40px auto; font-weight: bold;}
+#register_form .input { width: 100%; display: inline-block; margin: 20px 0}
+#register_form .input input { width: 80%; background: none; display: inline-block;}
+#register_form .input select { width: 80%}
 
+#register_form .btn_secundary { display: inline-block; margin-top: 20px;}
+#register_form .col-md-3 {float: none;margin: auto; position: relative;z-index: 3}
+
+.kid { width: 8%; position: absolute; left: 200px;top: 300px;}
+.girl {width: 8%; position: absolute; right: 200px;top: 300px;}
 
 
 /* KEYFRAMES */
