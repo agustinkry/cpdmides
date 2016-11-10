@@ -66,14 +66,38 @@ footer ul li a img {}
 
 /*Register form*/
 
-#register_form { width:80%; margin: auto; text-align: center; position: relative;z-index: 10}
+#register_form { width:80%; margin:40px auto; text-align: center; position: relative;z-index: 10}
 #register_form h2 { width: 100%; margin: 40px auto; font-weight: bold;}
 #register_form .input { width: 100%; display: inline-block; margin: 20px 0}
-#register_form .input input { width: 80%; background: none; display: inline-block;}
-#register_form .input select { width: 80%}
+#register_form .input input { 
+    border: 2px solid;
+    border-color: #00AEEF;
+    display: inline-block;
+    width: 50%;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 18px;
+    outline: none;
+    padding: 20px;
+}
+#register_form .input .style-select { 
+    border: 2px solid #00AEEF;
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 20px;
+    text-align: left;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 18px;
+    outline: none;
+    padding: 20px;
+}
+#register_form .input .style-select select { background: none;border: none; width: 100%}
+
+.error_form input { border-color:red !important}
 
 #register_form .btn_secundary { display: inline-block; margin-top: 20px;}
-#register_form .col-md-3 {float: none;margin: auto; position: relative;z-index: 3}
+#register_form .col-md-3 {float: none;margin:30px auto; position: relative;z-index: 3}
 
 .kid { width: 8%; position: absolute; left: 200px;top: 300px;}
 .girl {width: 8%; position: absolute; right: 200px;top: 300px;}
