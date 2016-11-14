@@ -18,7 +18,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="register">
+  <body class="question">
 
     <div id="logo"><img src="img/logo.svg" title="CPD Mides"></div>
 
@@ -34,35 +34,48 @@
 
     <section>
 
-        <div class="kid"><img src="img/kid01.svg"></div>
-        <div class="girl"><img src="img/kid01.svg"></div>
+        <div id="ready_tostart" class="main_content">
+             <div class="step">
+            <h3>Pregunta 1/10</h3>
+          </div>
 
-        <div id="register_form" class="main_content row text-center">
-            <h2>Completa tus datos o <br>continua como anonimo para jugar</h2>
-            <form><!-- 
-              Agregar .error_form al input para el estilo -->
-                <div class="input">
-                  <input type="text" placeholder="Tu nombre">
-                </div>  
-                <div class="input">
-                  <div class="style-select">
-                  <select>
-                    <option>Elegi tu centro</option>
-                    <option>2</option>
-                  </select>
-                  </div>
-                </div> 
-            </form>
+          <h2>Es importante que tú o un amigo/a consulten cuando...</h2>
+          
+          <div id="question_content">
             <div class="row">
-              <div class="col-md-12">
-                  <a href="areyouready.html" class="btn_primary">Siguiente</a>
-                  <a href="areyouready.html" class="btn_secundary">Continuar como anonimo</a>
-
-              </div>
-            
+              <div class="col-md-4">
+                   <div class="question_img selected">
+                    <img src="https://d13yacurqjgara.cloudfront.net/users/13079/screenshots/3085203/rv-dribbble.jpg">
+                    <p>Estas teniendo problemas de alimentación.</p>
+                    <div class="selected_check"></div>
+                  </div>  
+              </div> 
+              <div class="col-md-4">
+                   <div class="question_img">
+                    <img src="https://d13yacurqjgara.cloudfront.net/users/754899/screenshots/3085841/shaman_.png">
+                     <p>Te sientes siempre triste y desganado/a</p>
+                    <div class="selected_check"></div>
+                  </div>  
+              </div> 
+              <div class="col-md-4">
+                   <div class="question_img">
+                    <img src="https://d13yacurqjgara.cloudfront.net/users/278549/screenshots/3085980/800-02-01.jpg">
+                     <p>Estas teniendo problemas de alimentación.</p>
+                    <div class="selected_check"></div>
+                  </div>  
+              </div> 
+            </div>  
             </div>
 
-        </div>
+          <div class="row">
+              <div class="col-md-12">
+                  <a href="areyouready.html" class="btn_primary">Siguiente</a>
+              </div>
+            
+          </div>
+
+
+        </div>  
         <div id="bg">
           <div class="cloud" style="left:350px;top:350px"></div>
            <div class="cloud" style="top:450px"></div>
