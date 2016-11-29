@@ -318,7 +318,10 @@ footer ul li a img {}
     padding: 0;
     background: #fff;
     cursor: pointer;
+    box-shadow: 2px 2px 0px 0px #000;
 }
+
+.key:hover { background:#00AEEF }
 
 .key-inner{
     width: 30px;
@@ -340,6 +343,7 @@ footer ul li a img {}
   font-family: sans-serif;
   margin:0;
   padding:0;
+  cursor: pointer;
 }
 
 .keyboard-row{
