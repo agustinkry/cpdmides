@@ -87,8 +87,8 @@ footer ul li a img {}
 .step h3 { color: #00AEEF; font-weight: normal; font-size: 17px;} 
 
 /*Register form*/
-#register_form .input { width: 100%; display: inline-block; margin: 20px 0}
-#register_form .input input { 
+.form .input { width: 100%; display: inline-block; margin: 20px 0}
+.form .input input { 
     border: 2px solid;
     border-color: #00AEEF;
     display: inline-block;
@@ -99,7 +99,7 @@ footer ul li a img {}
     outline: none;
     padding: 20px;
 }
-#register_form .input .style-select { 
+.style-select { 
     border: 2px solid #00AEEF;
     display: inline-block;
     width: 50%;
@@ -110,19 +110,58 @@ footer ul li a img {}
     outline: none;
     padding: 20px;
 }
-#register_form .input .style-select select { background: none;border: none; width: 100%}
+.form .input .style-select select { background: none;border: none; width: 100%}
 
-#register_form  .checkbox { font-size: 16px;}
+.form  .checkbox { font-size: 16px;}
 
 .error_form input { border-color:red !important}
 
-#register_form .btn_secundary { display: inline-block; margin-top: 20px;}
-#register_form .col-md-3 {float: none;margin:30px auto; position: relative;z-index: 3}
-#register_form small { margin: 20px 0; display: inline-block;font-style: italic;}
+.form .btn_secundary { display: inline-block; margin-top: 20px;}
+.form .col-md-3 {float: none;margin:30px auto; position: relative;z-index: 3}
+.form small { margin: 20px 0; display: inline-block;font-style: italic;}
 
+.form textarea {
+  border: 2px solid #00AEEF;
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+    font-weight: 600;
+    border-radius: 6px;
+    font-size: 18px;
+    outline: none;
+    padding: 20px;
+
+}
 
 .kid { width: 8%; position: absolute; left: 200px;top: 300px;}
 .girl {width: 8%; position: absolute; right: 200px;top: 300px;}
+
+
+/*Heart*/
+
+.lifes { width: 100%; display: inline-block; margin: auto; text-align: center;}
+.heart {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background: url(../img/heart.png) no-repeat;
+  background-position: 0 0;
+   cursor: pointer;
+  animation: fave-heart 1s steps(28);
+}
+.heart:hover {
+  background-position: -2800px 0;
+  transition: background 1s steps(28);
+}
+@keyframes fave-heart {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2800px 0;
+  }
+}
+
 
 /*Are you ready*/
 
